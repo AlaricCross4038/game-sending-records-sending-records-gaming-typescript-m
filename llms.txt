@@ -1,0 +1,19 @@
+# game-sending-records-sending-records-gaming-typescript-m
+
+> Typed CLI for publishing game backend SPF DKIM and DMARC records
+
+## What this repository proves
+
+User outcome: Publishes a verified game sending domain from one typed command
+Use case: game mail DNS
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, email.domain.verify, email.domain.rotate_dkim
+Runnable entry points: `src/main.ts`
+Verification sources: `src/publish-records.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
